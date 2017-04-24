@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VoiceRecorder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="View0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPEECH  RECORDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIR-5F-Ze7">
+                                <rect key="frame" x="52" y="28" width="271" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="BQF-GC-2jh"/>
+                                    <constraint firstAttribute="width" constant="271" id="lZZ-46-hkV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording ON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zd-1T-wY3">
+                                <rect key="frame" x="132" y="119" width="111" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="8kt-xc-8SN"/>
+                                    <constraint firstAttribute="height" constant="30" id="ya6-CE-3uk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Td-NQ-iD1">
+                                <rect key="frame" x="38" y="182" width="300" height="268"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="268" id="A4I-8w-ZVl"/>
+                                    <constraint firstAttribute="width" constant="300" id="y22-Hd-iz9"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWp-8C-eUz">
+                                <rect key="frame" x="16" y="459" width="76" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="3OX-hO-aIT"/>
+                                    <constraint firstAttribute="width" constant="76" id="z4w-Lp-5Lx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YYG-Ti-nOs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRU-SC-m7c">
+                                <rect key="frame" x="149" y="459" width="76" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="OBP-CA-JgP"/>
+                                    <constraint firstAttribute="height" constant="47" id="aOU-Lc-3Z1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qQK-8f-MZN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvY-6z-Xdv">
+                                <rect key="frame" x="283" y="459" width="76" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="Ckr-nx-B82"/>
+                                    <constraint firstAttribute="height" constant="47" id="OXX-Tl-ZOG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LzT-LV-zXP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="TIR-5F-Ze7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="0dF-uL-LZn"/>
+                            <constraint firstItem="9Zd-1T-wY3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4DS-ED-TP7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jvY-6z-Xdv" secondAttribute="trailing" id="8v4-R8-ZJX"/>
+                            <constraint firstItem="jvY-6z-Xdv" firstAttribute="top" secondItem="vRU-SC-m7c" secondAttribute="top" id="P8I-Zc-6jq"/>
+                            <constraint firstItem="vRU-SC-m7c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TGo-GH-5vD"/>
+                            <constraint firstItem="9Zd-1T-wY3" firstAttribute="top" secondItem="TIR-5F-Ze7" secondAttribute="bottom" constant="35" id="Wq8-hN-1RS"/>
+                            <constraint firstItem="TIR-5F-Ze7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YQq-qw-cCS"/>
+                            <constraint firstItem="vRU-SC-m7c" firstAttribute="top" secondItem="4Td-NQ-iD1" secondAttribute="bottom" constant="9" id="eZC-eU-Jgp"/>
+                            <constraint firstItem="cWp-8C-eUz" firstAttribute="top" secondItem="vRU-SC-m7c" secondAttribute="top" id="f21-gb-vHR"/>
+                            <constraint firstItem="4Td-NQ-iD1" firstAttribute="top" secondItem="9Zd-1T-wY3" secondAttribute="bottom" constant="33" id="ghb-Kp-ufC"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="cWp-8C-eUz" secondAttribute="leading" id="hNl-e1-q7J"/>
+                            <constraint firstItem="4Td-NQ-iD1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mGE-bN-QxQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="recordButton" destination="cWp-8C-eUz" id="hOG-u3-CVD"/>
+                        <outlet property="recordingONLabel" destination="9Zd-1T-wY3" id="Rfv-2h-g4u"/>
+                        <outlet property="saveButton" destination="jvY-6z-Xdv" id="J1u-bC-nXl"/>
+                        <outlet property="stopButton" destination="vRU-SC-m7c" id="7Cr-ds-aY1"/>
+                        <outlet property="textView" destination="4Td-NQ-iD1" id="ULl-SA-6iC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
