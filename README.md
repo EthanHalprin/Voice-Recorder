@@ -1,7 +1,7 @@
 # Voice-Recorder
 See your speech recognised and texted instantly on screen &amp; saved to file
 
-
+![screenshot voice recorder](/vrecorder_screenshot.jpg)
 
 Voice Recorder - just like the name suggests: records what you say and you see this immediately on screen in a UITextView. If you wanna save to file - press 'Save'.
 
